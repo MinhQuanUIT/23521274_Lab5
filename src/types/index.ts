@@ -119,6 +119,10 @@ export interface AppSettings {
 }
 
 export interface SettingsState {
+  theme: 'light' | 'dark';
+  notifications: boolean;
   settings: AppSettings;
+  toggleTheme: () => void;
+  toggleNotifications: () => void;
   updateSettings: (settings: Partial<AppSettings>) => void;
 }

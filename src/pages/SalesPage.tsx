@@ -2,7 +2,6 @@ import { useEffect, useState, useMemo } from 'react';
 import { useSalesStore } from '../store/salesStore';
 import { LoadingSpinner } from '../components/common/LoadingSpinner';
 import { Download, Search, ArrowUpDown } from 'lucide-react';
-import type { Sale } from '../types';
 import './SalesPage.css';
 
 type SortField = 'date' | 'customer' | 'totalPrice' | 'status';
