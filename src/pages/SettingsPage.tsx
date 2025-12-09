@@ -6,7 +6,8 @@ import { Moon, Sun, Bell, BellOff, User, Save } from 'lucide-react';
 import './SettingsPage.css';
 
 export function SettingsPage() {
-  const { theme, notifications: notifEnabled, toggleTheme, toggleNotifications } = useSettingsStore();
+  const settingsStore = useSettingsStore();
+  const { theme, notifications: notifEnabled, toggleTheme, toggleNotifications } = settingsStore;
   const { user, updateUser } = useAuthStore();
   const addNotification = useNotificationStore(state => state.addNotification);
 
